@@ -42,7 +42,7 @@ export const AllNotes = () => {
           <Link to="/create"><AddIcon /></Link>
         </button>
         <div className="notes-grid">
-          {allNotes.map(note => (
+          {allNotes?.map(note => (
             <div className="note-card" key={note.id}>
               <p className="note-text">
                 {note.content.length > 20
